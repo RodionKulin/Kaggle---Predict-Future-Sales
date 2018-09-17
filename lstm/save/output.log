@@ -1,0 +1,41 @@
+2018-08-02 13:57:24,743:ERROR:STDERR:Exception while reading aws cred file: <class 'FileNotFoundError'>
+2018-08-02 13:57:25,465:INFO:STDOUT:Train range 2013 01 01 - 2016 12 30
+2018-08-02 13:57:25,465:INFO:STDOUT:Validation range 2016 12 31 - 2017 12 31
+2018-08-02 13:57:25,558:INFO:STDOUT:store values: [ 1  2  3  4  5  6  7  8  9 10]
+2018-08-02 13:57:25,743:INFO:STDOUT:item values: [ 1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24
+2018-08-02 13:57:25,743:INFO:STDOUT: 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48
+2018-08-02 13:57:25,743:INFO:STDOUT: 49 50]
+2018-08-02 13:57:25,754:ERROR:STDERR:C:\Users\Home\AppData\Local\conda\conda\envs\tensorflow\lib\site-packages\sklearn\utils\validation.py:475: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+2018-08-02 13:57:25,755:ERROR:STDERR:  warnings.warn(msg, DataConversionWarning)
+2018-08-02 13:57:25,766:INFO:STDOUT:sales Mean: 50.612301, StandardDeviation: 27.833700
+2018-08-02 13:57:25,812:INFO:STDOUT:day Mean: 183.000000, StandardDeviation: 105.366029
+2018-08-02 13:57:25,845:INFO:STDOUT:year Mean: 2014.500000, StandardDeviation: 1.118034
+2018-08-02 13:57:25,901:INFO:STDOUT:Feature names registered: ['store' 'sales' 'day' 'year' 'item']
+2018-08-02 13:57:25,902:INFO:STDOUT:Feature array length: 63
+2018-08-02 13:57:26,718:INFO:STDOUT:_________________________________________________________________
+2018-08-02 13:57:26,719:INFO:STDOUT:Layer (type)                 Output Shape              Param #
+2018-08-02 13:57:26,719:INFO:STDOUT:=================================================================
+2018-08-02 13:57:26,719:INFO:STDOUT:lstm (LSTM)                  (None, 1024)              4456448
+2018-08-02 13:57:26,719:INFO:STDOUT:_________________________________________________________________
+2018-08-02 13:57:26,720:INFO:STDOUT:dense (Dense)                (None, 512)               524800
+2018-08-02 13:57:26,720:INFO:STDOUT:_________________________________________________________________
+2018-08-02 13:57:26,720:INFO:STDOUT:dense_1 (Dense)              (None, 128)               65664
+2018-08-02 13:57:26,720:INFO:STDOUT:_________________________________________________________________
+2018-08-02 13:57:26,721:INFO:STDOUT:dense_2 (Dense)              (None, 32)                4128
+2018-08-02 13:57:26,721:INFO:STDOUT:_________________________________________________________________
+2018-08-02 13:57:26,721:INFO:STDOUT:dense_3 (Dense)              (None, 1)                 33
+2018-08-02 13:57:26,721:INFO:STDOUT:=================================================================
+2018-08-02 13:57:26,722:INFO:STDOUT:Total params: 5,051,073
+2018-08-02 13:57:26,722:INFO:STDOUT:Trainable params: 5,051,073
+2018-08-02 13:57:26,722:INFO:STDOUT:Non-trainable params: 0
+2018-08-02 13:57:26,722:INFO:STDOUT:_________________________________________________________________
+2018-08-02 13:57:26,722:INFO:STDOUT:Starting model training
+2018-08-02 13:57:27,302:INFO:STDOUT:Epoch 1/1
+2018-08-02 13:57:39,261:INFO:STDOUT:
+2018-08-02 13:57:39,263:INFO:STDOUT:Epoch 00001: val_loss improved from -inf to 15.41068, saving model to save/model.best.hdf5
+2018-08-02 13:57:39,635:INFO:STDOUT:1/1 [==============================]
+2018-08-02 13:57:39,635:INFO:STDOUT: - 12s 12s/step - loss: 1.2375 - val_loss: 15.4107
+2018-08-02 13:57:39,650:INFO:STDOUT:Starting evaluation for 90 days predictions
+2018-08-02 13:58:19,054:INFO:STDOUT:[============================================================] 100.0% ...Evaluation
+2018-08-02 13:58:19,057:INFO:STDOUT:Mean squared error: 151577.457192
+2018-08-02 13:58:19,059:INFO:STDOUT:Starting sanity check
